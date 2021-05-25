@@ -6,7 +6,7 @@ import SECTIONS_DATA from "./directory.data";
 
 import "./directory.styles.scss";
 
-class Directory extends Component {
+export default class Directory extends Component {
   constructor() {
     super();
 
@@ -25,5 +25,3 @@ class Directory extends Component {
     );
   }
 }
-
-export default Directory;

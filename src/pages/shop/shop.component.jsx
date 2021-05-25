@@ -4,7 +4,7 @@ import CollectionPreview from "../../components/collection-preview/collection-pr
 
 import SHOP_DATA from "./shop.data";
 
-class ShopPage extends Component {
+export default class ShopPage extends Component {
   constructor() {
     super();
 
@@ -25,5 +25,3 @@ class ShopPage extends Component {
     );
   }
 }
-
-export default ShopPage;

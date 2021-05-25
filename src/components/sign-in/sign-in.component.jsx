@@ -7,7 +7,7 @@ import FormInput from "../form-input/form-input.component";
 
 import "./sign-in.styles.scss";
 
-class SignIn extends Component {
+export default class SignIn extends Component {
   constructor() {
     super();
 
@@ -65,5 +65,3 @@ class SignIn extends Component {
     );
   }
 }
-
-export default SignIn;
