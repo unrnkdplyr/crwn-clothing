@@ -1,8 +1,14 @@
 import "./custom-button.styles.scss";
 
-const CustomButton = ({ children, isGoogleSignIn, ...otherProps }) => {
+const CustomButton = ({
+  children,
+  inverted,
+  isGoogleSignIn,
+  ...otherProps
+}) => {
   let buttonClass = "custom-button";
-  if (isGoogleSignIn) buttonClass += " google-sign-in";
+  if (inverted) buttonClass += " inverted";
+  else if (isGoogleSignIn) buttonClass += " google-sign-in";
 
   return (
     <button className={buttonClass} {...otherProps}>
